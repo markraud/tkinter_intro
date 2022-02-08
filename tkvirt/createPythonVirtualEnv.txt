@@ -1,0 +1,18 @@
+#create the virtual environment
+$ python -m venv <name>
+
+$ ls
+<name>/
+
+#activate the virtual environment
+$ source <name>/Scripts/activate
+(<name>) 
+
+#deactivate the virtual environement 
+$ deactivate
+
+
+https://github.com/markraud/tkinter_intro
+
+
+Intro To TKinter for Python GUI Apps by John Elder on Udemy
