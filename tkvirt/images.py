@@ -6,7 +6,7 @@ from PIL import ImageTk, Image      #import from Pillow
 
 root = Tk()     
 root.title('How to add an Icon!')
-root.geometry('600x600')
+root.geometry('400x400')
 root.iconbitmap('C:\\marks_work_docs\\development\\tkinter_udemy\\virt\\myicon.ico')  #this added the icon file
 
 def clicked():
