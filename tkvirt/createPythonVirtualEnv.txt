@@ -6,6 +6,7 @@ $ ls
 
 #activate the virtual environment
 $ source <name>/Scripts/activate
+source tkvirt/Scripts/activate
 (<name>) 
 
 #deactivate the virtual environement 

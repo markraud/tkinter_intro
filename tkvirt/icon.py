@@ -5,7 +5,8 @@ from tkinter import *
 root = Tk()     
 root.title('How to add an Icon!')
 root.geometry('400x400')
-root.iconbitmap('C:\\marks_work_docs\\development\\tkinter_udemy\\virt\\myicon.ico')  #this added the icon file
+#C:\marks_work_docs\development\tkinter_intro\tkvirt
+root.iconbitmap('C:\\marks_work_docs\\development\\tkinter_intro\\tkvirt\\myicon.ico')  #this added the icon file
 
 def clicked():
     input = e.get()       #this stores what is typed in the entry widget in the variable input
