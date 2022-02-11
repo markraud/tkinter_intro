@@ -16,11 +16,11 @@ def clicked():
     myLabel2.pack()
 
 def hide():
-    myLabel2.pack_forget() #hides things
+    myLabel2.pack_forget() #hides things but keeps it in memory so it can be brought back and repacked
     # myLabel2.destroy() #gets rid of it forever 
 
 def show():
-    myLabel2.pack()
+    myLabel2.pack() #this will bring back and pack the myLabel2
 
 # Add Image
 # myImage = ImageTk.PhotoImage(Image.open('treeImage.jpg'))
