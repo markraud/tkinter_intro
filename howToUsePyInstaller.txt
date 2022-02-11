@@ -1,0 +1,5 @@
+https://pyinstaller.readthedocs.io/en/stable/
+
+1. put your icon and the python script file(i.e. the <name>.py) into a new folder(we called the folder 'exe' in our example).  You can actually do this from your main repo folder but it will be cleaner if you created a new directory for it. 
+2. you need to install pyinstaller using pip.  Do this in your repo folder while your virtual environment is active(you should be able to see your "virt").  Run ->  $ pip install pyinstaller
+3. cd into the new folder you created and run $ pyinstaller.exe --icon=myicon.ico --windowed <name>.py

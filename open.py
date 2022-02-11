@@ -15,4 +15,6 @@ root.iconbitmap('C:\\marks_work_docs\\development\\tkinter_intro\\myicon.ico')
 
 root.filename = filedialog.askopenfilename(initialdir='C:\\marks_work_docs\\development\\tkinter_intro', title='Open An Image File', filetypes=( ('JPG File', '*.jpg'), ('PNG File', '*.png'), ('All Files', '*.*') ))
 
+
+
 root.mainloop()
