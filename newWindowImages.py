@@ -2,6 +2,7 @@
 # how to create new windows .... multiple windows
 
 from tkinter import *
+from PIL import ImageTk, Image
 
 root = Tk()     
 root.title('Hello World!')
@@ -12,13 +13,17 @@ root.iconbitmap('C:\\marks_work_docs\\development\\tkinter_intro\\myicon.ico')
 def openWindow():
     newWindow = Toplevel()    # creates a new window in addition to the original window
     newWindow.title('Second Window')
-    newWindow.geometry('300x200')
+    newWindow.geometry('500x700')
     newWindow.iconbitmap('C:\\marks_work_docs\\development\\tkinter_intro\\myicon.ico')  
 
     myLabel = Label(newWindow, text='Look at my cool second window!').pack(pady=20)
 
+    myImg = ImageTk.PhotoImage(Image.open('treeImage.jpg'))
+    imgLabel = Label(newWindow, image=myImg)
+    imgLabel.pack(pady=5)
+
     destroyButton = Button(newWindow, text='Quit', command=newWindow.destroy)   # this is a button that closes out the 2nd window
-    destroyButton.pack()
+    destroyButton.pack(pady=5)
 
     #Minimize the original window
     # hideButton = Button(newWindow, text='Hide Main Window', command=root.iconify)  
@@ -34,7 +39,7 @@ def openWindow():
     hideButton.pack()
     showButton.pack()
     
-    newWindow.mainloop()    # this closes the loop for the 2nd window.  The program will work if you forget this part but technically you are supposed to close it out
+    newWindow.mainloop()    # this closes the loop for the 2nd window.  The program may work if you forget this part but technically you are supposed to close it out
 
 # Create New Windows
 myButton = Button(root, text='Open 2nd Window', command=openWindow).pack()
